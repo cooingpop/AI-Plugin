@@ -2,6 +2,16 @@
 
 컨텍스트 윈도우 사용량을 시각적으로 보여주는 상태 표시줄입니다.
 
+## 특징
+
+- **토큰을 사용하지 않습니다** - API 호출 없이 로컬에서만 동작합니다.
+
+## 동작 원리
+
+Claude Code가 제공하는 환경변수(`CLAUDE_CONTEXT_WINDOW_TOKENS_USED`, `CLAUDE_CONTEXT_WINDOW_TOKEN_LIMIT`, `CLAUDE_MODEL_NAME`)를 읽어서 터미널에 표시합니다.
+
+---
+
 ## 미리보기
 
 ### Windows
