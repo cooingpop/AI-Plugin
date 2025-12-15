@@ -1,0 +1,7 @@
+{
+  "statusLine": {
+    "type": "command",
+    "command": "powershell -ExecutionPolicy Bypass -NoProfile -Command \"$s=Join-Path $env:USERPROFILE '.claude/statusline.ps1'; & $s\"",
+    "padding": 0
+  }
+}
