@@ -81,6 +81,24 @@
             color: #8b949e;
             font-size: 0.875rem;
         }
+        .plugin-right {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+        }
+        .download-btn {
+            background: #238636;
+            color: #fff;
+            text-decoration: none;
+            padding: 6px 12px;
+            border-radius: 6px;
+            font-size: 0.875rem;
+            font-weight: 500;
+            transition: background 0.2s;
+        }
+        .download-btn:hover {
+            background: #2ea043;
+        }
         footer {
             margin-top: 48px;
             text-align: center;
@@ -108,7 +126,10 @@
                     <span class="plugin-badge claude">Claude Code</span>
                     <a class="plugin-name" href="AI/Claude/Plugin/claude-statusline/">claude-statusline</a>
                 </div>
-                <span class="plugin-desc">컨텍스트 윈도우 사용량 시각화</span>
+                <div class="plugin-right">
+                    <span class="plugin-desc">컨텍스트 윈도우 사용량 시각화</span>
+                    <a class="download-btn" href="AI/Claude/Plugin/claude-statusline.zip" download>Download</a>
+                </div>
             </div>
         </div>
 
