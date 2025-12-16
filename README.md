@@ -6,4 +6,4 @@
 
 | AI 서비스 | 플러그인 | 설명 |
 |-----------|----------|------|
-| Claude Code | [claude-statusline](AI/Claude/Plugin/claude-statusline/) | 컨텍스트 윈도우 사용량 시각화 |
+| Claude Code | [claude-statusline](ai/claude/plugin/claude-statusline/) | 컨텍스트 윈도우 사용량 시각화 |
