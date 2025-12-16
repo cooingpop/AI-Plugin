@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Multiplayer Snake Game</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div id="game-container">
+    <canvas id="gameCanvas"></canvas>
+
+    <div id="ui-overlay">
+      <div id="score-board">
+        <h3>Leaderboard</h3>
+        <ul id="leaderboard"></ul>
+      </div>
+
+      <div id="player-info">
+        <span id="my-score">Score: 0</span>
+        <span id="my-length">Length: 0</span>
+      </div>
+
+      <div id="minimap-container">
+        <canvas id="minimap"></canvas>
+      </div>
+    </div>
+
+    <div id="death-screen" class="hidden">
+      <div class="death-content">
+        <h2>Game Over!</h2>
+        <p>Your Score: <span id="final-score">0</span></p>
+        <button id="respawn-btn">Play Again</button>
+      </div>
+    </div>
+
+    <div id="start-screen">
+      <div class="start-content">
+        <h1>Snake Game</h1>
+        <p class="subtitle">Multiplayer Battle</p>
+        <div class="input-group">
+          <input type="text" id="player-name" placeholder="Enter your name" maxlength="12" autocomplete="off">
+        </div>
+        <button id="start-btn" disabled>START</button>
+        <div class="controls-info">
+          <p>Controls: Arrow Keys or WASD</p>
+        </div>
+      </div>
+    </div>
+
+    <div id="server-closed-screen" class="hidden">
+      <div class="server-closed-content">
+        <h2>Server Closed</h2>
+        <p class="server-message">서버와의 연결이 종료되었습니다</p>
+        <div class="final-ranking">
+          <h3>Final Ranking</h3>
+          <ul id="final-leaderboard"></ul>
+        </div>
+        <button id="reload-btn" onclick="location.reload()">Reconnect</button>
+      </div>
+    </div>
+
+    <div id="connection-status">Connecting...</div>
+  </div>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="js/game.js"></script>
+</body>
+</html>
