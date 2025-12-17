@@ -78,6 +78,58 @@
         .plugin-badge.config {
             background: #0891b2;
         }
+        .marketplace-banner {
+            background: linear-gradient(135deg, #1a1f2e 0%, #0d1117 100%);
+            border: 1px solid #30363d;
+            border-radius: 8px;
+            padding: 16px 20px;
+            margin-bottom: 24px;
+            display: flex;
+            align-items: center;
+            gap: 16px;
+        }
+        .marketplace-banner:hover {
+            border-color: #58a6ff;
+        }
+        .marketplace-preview {
+            width: 120px;
+            height: 68px;
+            border-radius: 4px;
+            object-fit: cover;
+            border: 1px solid #30363d;
+            flex-shrink: 0;
+        }
+        .marketplace-content {
+            flex: 1;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .marketplace-info h3 {
+            color: #f0f6fc;
+            font-size: 1rem;
+            margin-bottom: 4px;
+        }
+        .marketplace-info p {
+            color: #8b949e;
+            font-size: 0.875rem;
+        }
+        .marketplace-btn {
+            background: transparent;
+            border: 1px solid #58a6ff;
+            color: #58a6ff;
+            text-decoration: none;
+            padding: 8px 16px;
+            border-radius: 6px;
+            font-size: 0.875rem;
+            font-weight: 500;
+            transition: all 0.2s;
+            flex-shrink: 0;
+        }
+        .marketplace-btn:hover {
+            background: #58a6ff;
+            color: #0d1117;
+        }
         .plugin-name {
             font-weight: 600;
             color: #58a6ff;
@@ -130,21 +182,18 @@
 
         <h2>Claude Code</h2>
 
-        <h3 style="font-size: 1rem; color: #8b949e; margin-bottom: 12px;">Plugins</h3>
-        <div class="plugin-list">
-            <div class="plugin-card">
-                <div class="plugin-info">
-                    <span class="plugin-badge plugin">Plugin</span>
-                    <a class="plugin-name" href="https://github.com/cooingpop/claude-plugin" target="_blank">claude-plugin</a>
+        <a class="marketplace-banner" href="https://github.com/cooingpop/claude-plugin" target="_blank">
+            <img class="marketplace-preview" src="ai/claude/plugins/img.png" alt="Plugin Marketplace Preview">
+            <div class="marketplace-content">
+                <div class="marketplace-info">
+                    <h3>Plugin Marketplace</h3>
+                    <p>Claude Code Skills/Commands 플러그인 모음</p>
                 </div>
-                <div class="plugin-right">
-                    <span class="plugin-desc">Jira 이슈 보고서 자동 생성</span>
-                    <a class="download-btn" href="https://github.com/cooingpop/claude-plugin" target="_blank">GitHub</a>
-                </div>
+                <span class="marketplace-btn">GitHub →</span>
             </div>
-        </div>
+        </a>
 
-        <h3 style="font-size: 1rem; color: #8b949e; margin: 24px 0 12px 0;">Configs</h3>
+        <h3 style="font-size: 1rem; color: #8b949e; margin-bottom: 12px;">Configs</h3>
         <div class="plugin-list">
             <div class="plugin-card">
                 <div class="plugin-info">

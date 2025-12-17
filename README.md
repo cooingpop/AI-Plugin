@@ -4,11 +4,7 @@
 
 ## Claude Code
 
-### Plugins
-
-| 이름 | 설명 | 링크 |
-|------|------|------|
-| claude-plugin | Jira 이슈 보고서 자동 생성 | [GitHub](https://github.com/cooingpop/claude-plugin) |
+**[Plugin Marketplace](https://github.com/cooingpop/claude-plugin)** - Skills/Commands 플러그인 모음
 
 ### Configs
 
