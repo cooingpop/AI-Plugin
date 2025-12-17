@@ -72,6 +72,12 @@
         .plugin-badge.tool {
             background: #8b5cf6;
         }
+        .plugin-badge.plugin {
+            background: #059669;
+        }
+        .plugin-badge.config {
+            background: #0891b2;
+        }
         .plugin-name {
             font-weight: 600;
             color: #58a6ff;
@@ -122,16 +128,32 @@
         <h1>AI Plugin Collection</h1>
         <p class="description">각 AI 서비스별 플러그인 및 설정 파일 모음입니다.</p>
 
-        <h2>플러그인 목록</h2>
+        <h2>Claude Code</h2>
+
+        <h3 style="font-size: 1rem; color: #8b949e; margin-bottom: 12px;">Plugins</h3>
         <div class="plugin-list">
             <div class="plugin-card">
                 <div class="plugin-info">
-                    <span class="plugin-badge claude">Claude Code</span>
-                    <a class="plugin-name" href="ai/claude/plugin/claude-statusline/">claude-statusline</a>
+                    <span class="plugin-badge plugin">Plugin</span>
+                    <a class="plugin-name" href="https://github.com/cooingpop/claude-plugin" target="_blank">claude-plugin</a>
+                </div>
+                <div class="plugin-right">
+                    <span class="plugin-desc">Jira 이슈 보고서 자동 생성</span>
+                    <a class="download-btn" href="https://github.com/cooingpop/claude-plugin" target="_blank">GitHub</a>
+                </div>
+            </div>
+        </div>
+
+        <h3 style="font-size: 1rem; color: #8b949e; margin: 24px 0 12px 0;">Configs</h3>
+        <div class="plugin-list">
+            <div class="plugin-card">
+                <div class="plugin-info">
+                    <span class="plugin-badge config">Config</span>
+                    <a class="plugin-name" href="ai/claude/configs/claude-statusline/">claude-statusline</a>
                 </div>
                 <div class="plugin-right">
                     <span class="plugin-desc">컨텍스트 윈도우 사용량 시각화</span>
-                    <a class="download-btn" href="ai/claude/plugin/claude-statusline.zip" download>Download</a>
+                    <a class="download-btn" href="ai/claude/configs/claude-statusline.zip" download>Download</a>
                 </div>
             </div>
         </div>
